@@ -511,20 +511,81 @@
         </div>
              
      <!-- Subscribe -->
-   
+<div> 
+  <p>Subscribe</p>
+     <form>
+     <label>
+    
+    <input type="text" name="username" placeholder="E-mail" />
+  </label>
+  <button class="btn">Active button</button>
+</form>
+</div> 
       </div>
     </footer>
 
-    <!-- modal window -->
-    <<div class="backdrop is-hidden" data-modal>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" type="button" data-modal-close>
-          <svg class="modal-close-btn-icon" width="8" height="8">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="20" height="20">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </button type="submit"></type=>
+        </button>
+        <strong class="modal-title">Leave your contacts and we will call you back</strong>
+        <form class="modal-form" name="modal_form">
+          <!-- Name field -->
+          <label class="modal-form-label" for="user_sign">Name</label>
+          <div class="modal-form-group">
+            <input class="modal-form-field" type="text" id="user_sign" />
+            <svg class="modal-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <!-- Phone field -->
+          <label class="modal-form-label" for="user_telephone">Phone</label>
+          <div class="modal-form-group">
+            <input class="modal-form-field" type="tel" id="user_telephone" />
+            <svg class="modal-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <!-- Email field -->
+          <label class="modal-form-label" for="user_email">Email</label>
+          <div class="modal-form-group">
+            <input class="modal-form-field" type="text" id="user_email" />
+            <svg class="modal-form-icon" width="20" height="20">
+              <use href=""></use>
+            </svg>
+          </div>
+          <!-- Comment field -->
+          <label class="modal-form-label" for="user_comment">Comment</label>
+          <textarea
+            class="modal-form-comment"
+            name="user_comment"
+            id="user_comment"
+            rows="6"
+            placeholder="Type your comment..."
+          ></textarea>
+          <!-- Agreement field -->
+          <label class="modal-form-agreement" for="user_agreement">
+            <input
+              class="modal-form-checkbox"
+              type="checkbox"
+              name="user_agreement"
+              id="user_agreement"
+            />
+            <span class="modal-form-desc">
+              I accept the terms and conditions of the
+              <a class="modal-form-link" href="" target="_blank">Privacy Policy</a>
+            </span>
+          </label>
+
+          <button class="modal-form-btn btn" type="submit">Submit</button>
+        </form>
       </div>
     </div>
+  
 
     <script src="./js/modal.js"></script>
   </body>
